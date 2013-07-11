@@ -1,8 +1,8 @@
 # Zsh prompt script to display the root of your project
 
 
-*it searches up the directory tree for the first folder labeled with
-*an OS X color label. ( you can change the color in the .rb file )
+ **it searches up the directory tree for the first folder labeled with**
+ **an OS X color label. ( you can change the color in the find_proj.rb file )**
 
 * put this in your '~/.zshrc'
     * I modified the default Oh-My-Zsh prompt

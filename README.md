@@ -17,3 +17,10 @@ export PROMPT='%{$fg_bold[cyan]%}%{$bg_bold[white]%}PJ($(~/Testing/find_proj.rb)
 ```zsh
 function p () { cd `cat /tmp/proj_alias.tmp` }
 ```
+
+### switching back to last project root with ```p <CR>```
+
+- indicator shows up in prompt when your in your project root or a child of it 
+- ```p``` will bring you to the root 
+
+![](https://github.com/Capybara/prompt/raw/master/prompt.png) **Project root** | **Working Directory** | **git status**

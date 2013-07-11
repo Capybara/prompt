@@ -9,6 +9,6 @@ y.ascend do |x|
   if `mdls -name kMDItemFSLabel -raw #{x}` == color_num
     puts "PJ(#{x.basename})"
     File.open("/tmp/proj_alias.tmp", 'w+') {|f| f.write("#{x}") }
+    break
   end
-  break
 end

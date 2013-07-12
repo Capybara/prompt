@@ -15,7 +15,7 @@ export PROMPT='%{$fg_bold[cyan]%}%{$bg_bold[white]%}PJ($(~/Testing/find_proj.rb)
     * typing 'p <CR>' will move you to your project root
 
 ```zsh
-function p () { cd `path_to_proj.rb` }
+function p () { cd `path_to_proj.rb $1` }
 ```
 
 - testing branch: added history ```p #``` will take you back to previously visited project folders

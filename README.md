@@ -4,7 +4,7 @@
  **it searches up the directory tree for the first folder labeled with**
  **an OS X color label. ( you can change the color in the find_proj.rb file )**
 
-* put this in your '~/.zshrc'
+* put this in your '~/.zshrc' ,change path to find_proj.rb
     * I modified the default Oh-My-Zsh prompt
 
 ```zsh
@@ -15,5 +15,7 @@ export PROMPT='%{$fg_bold[cyan]%}%{$bg_bold[white]%}PJ($(~/Testing/find_proj.rb)
     * typing 'p <CR>' will move you to your project root
 
 ```zsh
-function p () { cd `cat /tmp/proj_alias.tmp` }
+function p () { cd `path_to_proj.rb` }
 ```
+
+- testing branch: added history ```p #``` will take you back to previously visited project folders

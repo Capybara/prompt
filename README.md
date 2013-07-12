@@ -19,3 +19,5 @@ function p () { cd `path_to_proj.rb` }
 ```
 
 - testing branch: added history ```p #``` will take you back to previously visited project folders
+ 
+ ![](https://raw.github.com/Capybara/prompt/test/prompt.png)

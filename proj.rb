@@ -3,6 +3,7 @@ require 'pathname'
 require 'yaml'
 project = YAML::load( File.open( '/tmp/proj_alias.yml' ) )
 index = ARGV.first.to_i || 0
+project ||=[]
 if project.length > index
   puts(project[index])
 else

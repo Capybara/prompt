@@ -1,7 +1,9 @@
 #!/usr/bin/env ruby
 require 'pathname'
 require 'yaml'
-project = YAML::load( File.open( '/tmp/proj_alias.yml' ) )
+if File.exists?('/tmp/proj_alias.yml')
+  project = YAML::load( File.open( '/tmp/proj_alias.yml' ) )
+end
 index = ARGV.first.to_i || 0
 project ||=[]
 if project.length > index

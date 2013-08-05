@@ -10,15 +10,15 @@ y.ascend do |x|
   if `mdls -name kMDItemFSLabel -raw #{x}` == color_num
     puts "PJ(#{x.basename})"
     #File.open("/tmp/proj_alias.tmp", 'w+') {|f| f.write("#{x}") }
-    stack = if File.exists?('~/.proj_alias.yml')
-                YAML::load( File.read('~/.proj_alias.yml') )
+    stack = if File.exists?('/tmp/.proj_alias.yml')
+                YAML::load( File.read('/tmp/.proj_alias.yml') )
               else
                []
               end
     stack ||= []
     stack.unshift(x)
     stack.uniq!
-    File.open('~/.proj_alias.yml','w') do|file|
+    File.open('/tmp/.proj_alias.yml','w') do|file|
       file.puts stack.to_yaml
     end
     break
